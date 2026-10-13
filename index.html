@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mariemont Chapter, NSDAR | Mariemont, Ohio</title>
+  <meta name="description" content="Mariemont Chapter, NSDAR, serves Mariemont and surrounding communities through historic preservation, education, and patriotism.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23004990'/%3E%3Cpath d='M32 8l6.1 12.4 13.7 2-9.9 9.6 2.3 13.6L32 39.2l-12.2 6.4L22.1 32l-9.9-9.6 13.7-2z' fill='white'/%3E%3Cpath d='M39 12h17v7H42zm4 12h13v7H45zm2 12h11v7H43z' fill='%23CF152D'/%3E%3C/svg%3E">
+  <style>
+    :root{--blue:#004990;--navy:#052f61;--red:#cf152d;--gray:#8e8e8e;--ink:#1e242c;--line:#d8dde4;--paper:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:5rem}
+    body{margin:0;background:linear-gradient(90deg,var(--red) 0 24px,#fff 24px calc(100% - 24px),var(--red) calc(100% - 24px));color:var(--ink);font:400 1rem/1.62 Roboto,Arial,sans-serif}
+    a{color:#065dc5;text-underline-offset:.16em}a:hover{color:#003d7a}
+    a:focus-visible,button:focus-visible{outline:3px solid #f4c442;outline-offset:3px}
+    img{display:block;max-width:100%}
+    .page{width:min(94vw,1480px);margin:0 auto;min-height:100vh;background:var(--paper);box-shadow:0 0 35px rgba(8,38,72,.12)}
+    .top-rule{height:10px;background:var(--blue)}
+    .masthead{display:grid;grid-template-columns:minmax(350px,31%) 1fr;min-height:300px;background:#fff}
+    .brand{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.8rem 2.2rem;text-align:center}
+    .brand img{width:min(100%,430px);height:auto}
+    .brand h1{margin:.9rem 0 0;color:var(--blue);font:400 clamp(1.7rem,2.4vw,2.55rem)/1.05 'Libre Caslon Display',Georgia,serif;font-style:italic}
+    .brand p{margin:.35rem 0 0;color:var(--blue);font-size:.83rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+    .photo-collage{position:relative;display:grid;grid-template-columns:1.3fr .75fr 1.35fr;overflow:hidden;min-width:0;background:var(--navy)}
+    .photo-collage figure{position:relative;margin:0;min-width:0;overflow:hidden}
+    .photo-collage img{width:100%;height:100%;object-fit:cover;filter:saturate(.86) contrast(.94);opacity:.74}
+    .photo-collage figure:nth-child(1) img{object-position:51% center}.photo-collage figure:nth-child(2) img{object-position:center 47%}.photo-collage figure:nth-child(3) img{object-position:60% center}
+    .photo-collage:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.1),rgba(255,255,255,.23),rgba(0,73,144,.12));pointer-events:none}
+    .collage-title{position:absolute;z-index:2;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1.5rem;text-align:center;color:#061992;text-shadow:0 1px 0 #fff,0 0 18px rgba(255,255,255,.95),0 0 30px rgba(255,255,255,.72);pointer-events:none}
+    .collage-title strong{font:400 clamp(2.2rem,4.1vw,4.55rem)/1 'Libre Caslon Display',Georgia,serif;font-style:italic}
+    .collage-title span{margin-top:1rem;font:400 clamp(1.35rem,2.75vw,2.95rem)/1.08 'Libre Caslon Display',Georgia,serif;font-style:italic}
+    .nav-wrap{border-top:10px solid var(--blue);background:var(--gray)}
+    .nav-row{display:flex;align-items:center;min-height:60px;padding:0 1rem}
+    .menu{display:none;margin-left:auto;border:1px solid rgba(255,255,255,.72);background:transparent;color:#fff;padding:.55rem .8rem;font:700 .95rem Roboto,Arial,sans-serif}
+    nav{display:flex;align-items:center;flex-wrap:wrap;gap:0}
+    nav a{display:inline-flex;align-items:center;min-height:60px;padding:0 .9rem;color:#fff;text-decoration:none;font:700 clamp(.88rem,1.12vw,1.08rem)/1.1 Georgia,'Times New Roman',serif;white-space:nowrap}
+    nav a:hover,nav a:focus-visible{background:#727272;color:#fff}
+    nav .membership{background:rgba(0,73,144,.24)}
+    main{padding:6.5rem clamp(2rem,6vw,7rem) 5.5rem}
+    .intro{max-width:1280px}
+    .intro h2,.mission h2,.today h2{margin:0 0 1rem;color:#222;font:400 clamp(2.3rem,4vw,3.8rem)/1.08 'Libre Caslon Display',Georgia,serif}
+    .intro p,.mission p,.today p{margin:.75rem 0;font-family:Georgia,'Times New Roman',serif;font-size:clamp(1rem,1.25vw,1.22rem);line-height:1.62}
+    .intro .established{color:var(--blue);font-weight:700}
+    .today{margin:4.5rem 0}
+    .today-grid{display:grid;grid-template-columns:1.35fr .8fr;gap:1.5rem;align-items:stretch}
+    .feature-photo,.side-photo{position:relative;margin:0;overflow:hidden;background:#e9eef3}
+    .feature-photo{min-height:420px}.side-photo{min-height:420px}
+    .feature-photo img,.side-photo img{width:100%;height:100%;object-fit:cover}
+    .side-photo img{object-position:center}
+    figcaption{position:absolute;left:0;right:0;bottom:0;padding:1rem 1.2rem;background:linear-gradient(transparent,rgba(5,34,67,.9));color:#fff;font-size:.85rem;line-height:1.4}
+    .mission{padding-top:2rem;border-top:1px solid var(--line)}
+    .mission h2{margin-top:2.3rem;font-size:clamp(2rem,3.3vw,3rem)}
+    .mission h2:first-child{margin-top:0}
+    .photo-story{position:relative;display:grid;grid-template-columns:minmax(240px,.58fr) minmax(0,1.42fr);align-items:center;gap:2rem;margin:6rem 0;padding:2.7rem 2.2rem;background:linear-gradient(135deg,#f7f3ed 0%,#eef3f8 100%);border-top:8px solid var(--blue);border-bottom:8px solid var(--red)}
+    .photo-story:before{content:"";position:absolute;left:1.25rem;top:1.1rem;width:52px;height:4px;background:var(--red);box-shadow:0 10px 0 var(--blue)}
+    .story-copy{padding:.8rem 0 .8rem .5rem}
+    .story-kicker{margin:0 0 .65rem;color:var(--red);font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+    .photo-story h2{margin:0;color:var(--navy);font:400 clamp(2.1rem,3.5vw,3.35rem)/1.05 'Libre Caslon Display',Georgia,serif}
+    .photo-story p{margin:1rem 0 0;font-family:Georgia,'Times New Roman',serif;font-size:1.08rem;line-height:1.62}
+    .story-frame{position:relative;margin:-4.4rem .2rem -4.4rem 0;padding:.75rem;background:#fff;box-shadow:0 18px 46px rgba(5,47,97,.22);transform:rotate(.45deg)}
+    .story-frame:after{content:"";position:absolute;inset:.75rem;border:1px solid rgba(255,255,255,.62);pointer-events:none}
+    .story-frame img{width:100%;height:auto}
+    .story-frame figcaption{position:static;padding:.7rem .35rem .05rem;background:none;color:#4a515a;font-size:.78rem;font-style:italic;text-align:center}
+    .display-feature{display:grid;grid-template-columns:.78fr 1.22fr;gap:2rem;align-items:center;margin:4rem 0;padding:2rem;background:#f3f5f7;border-left:8px solid var(--red)}
+    .display-feature img{width:100%;max-height:520px;object-fit:cover;object-position:center}
+    .display-feature h2{margin:0 0 .75rem;color:var(--navy);font:400 clamp(2rem,3vw,3rem)/1.08 'Libre Caslon Display',Georgia,serif}
+    .display-feature p{font-family:Georgia,'Times New Roman',serif;font-size:1.06rem}
+    .contact-band{display:flex;align-items:center;justify-content:space-between;gap:2rem;margin-top:4rem;padding:2.2rem 2.5rem;background:var(--navy);color:#fff}
+    .contact-band h2{margin:0;font:400 clamp(1.8rem,3vw,2.8rem)/1.1 'Libre Caslon Display',Georgia,serif}
+    .contact-band p{margin:.5rem 0 0}.contact-band a.button{flex:none;display:inline-block;padding:.8rem 1.2rem;background:var(--red);color:#fff;text-decoration:none;font-weight:700}
+    footer{padding:2.5rem clamp(2rem,6vw,7rem);background:#efefef;border-top:10px solid var(--blue);color:#40464e;font-size:.82rem}
+    .footer-links{display:flex;flex-wrap:wrap;gap:1.25rem;margin-bottom:1rem}.footer-links a{font-weight:700}
+    footer p{margin:.35rem 0}.updated{font-weight:700;color:#111}
+    @media(max-width:1050px){.masthead{grid-template-columns:36% 64%;min-height:250px}.brand{padding:1.3rem}.collage-title strong{font-size:clamp(2rem,5vw,3.4rem)}.collage-title span{font-size:clamp(1.25rem,3vw,2rem)}.menu{display:block}.nav-row{position:relative;min-height:58px}.nav-row nav{display:none;position:absolute;z-index:20;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:#858585;box-shadow:0 16px 28px rgba(0,0,0,.2)}.nav-row nav.open{display:flex}.nav-row nav a{min-height:48px}.today-grid{grid-template-columns:1fr}.feature-photo,.side-photo{min-height:380px}.photo-story{grid-template-columns:1fr;margin:5rem 0 6rem}.story-copy{padding:1.4rem 1rem 0}.story-frame{margin:0 0 -4.5rem;transform:rotate(.3deg)}}
+    @media(max-width:700px){body{background:#fff}.page{width:100%;box-shadow:none}.masthead{grid-template-columns:1fr;min-height:0}.brand{padding:1.35rem}.brand img{width:240px}.brand h1{font-size:1.55rem}.brand p{font-size:.7rem}.photo-collage{min-height:230px}.collage-title strong{font-size:2.35rem}.collage-title span{margin-top:.55rem;font-size:1.35rem}.photo-collage{grid-template-columns:1.3fr .8fr 1.2fr}.nav-wrap{border-top-width:7px}main{padding:4rem 1.35rem}.today{margin:3.5rem 0}.feature-photo,.side-photo{min-height:280px}.photo-story{gap:1.2rem;margin:4.25rem -.35rem 5rem;padding:2.2rem 1rem}.story-copy{padding:1.2rem .25rem 0}.story-frame{margin:0 0 -3.4rem;padding:.45rem;transform:none}.story-frame:after{inset:.45rem}.display-feature{grid-template-columns:1fr;padding:1.25rem;gap:1.25rem}.contact-band{align-items:flex-start;flex-direction:column;padding:1.7rem}footer{padding:2rem 1.35rem;border-top-width:7px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <div class="page" id="top">
+    <header>
+      <div class="top-rule"></div>
+      <div class="masthead">
+        <div class="brand">
+          <a href="#top" aria-label="Mariemont Chapter home"><img src="dar-logo.png" alt="Daughters of the American Revolution"></a>
+          <h1>Mariemont Chapter, NSDAR</h1>
+          <p>Mariemont, Ohio</p>
+        </div>
+        <div class="photo-collage" aria-label="Recent Mariemont Chapter activities">
+          <figure><img src="loveland-america-250.jpg" alt="Mariemont Chapter members and community partners at Loveland City Hall"></figure>
+          <figure><img src="mariemont-america-250-display.jpg" alt="Mariemont Chapter America 250 commemorative display"></figure>
+          <figure><img src="library-exhibit.jpg" alt="Mariemont Chapter members with an America 250 library exhibit"></figure>
+          <div class="collage-title"><strong>Mariemont Chapter</strong><span>Daughters of the American Revolution</span></div>
+        </div>
+      </div>
+      <div class="nav-wrap"><div class="nav-row"><button class="menu" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button><nav id="main-nav" aria-label="Primary navigation"><a href="#top">Home</a><a href="#about">About</a><a href="#history">History</a><a href="#work">Our work</a><a href="#gallery">Gallery</a><a class="membership" href="https://www.dar.org/national-society/become-member/membership-interest-form" target="_blank" rel="noopener">Membership</a><a href="https://www.dar.org/" target="_blank" rel="noopener">NSDAR</a><a href="https://ohiodar.org/" target="_blank" rel="noopener">Ohio DAR</a><a href="mailto:regent@mariemontdar.com">Contact</a></nav></div></div>
+    </header>
+    <main>
+      <section class="intro" id="about">
+        <h2>Welcome to Mariemont Chapter, NSDAR!</h2>
+        <p>We are women from Mariemont and surrounding communities in southwest Ohio who are passionate about community service, preserving history, educating children, and honoring those who serve or have served our nation. We are part of the <a href="https://www.dar.org/" target="_blank" rel="noopener">National Society Daughters of the American Revolution</a> (NSDAR or DAR), a nonprofit, nonpolitical women’s service organization.</p>
+        <p class="established">Organized in 1930, Mariemont Chapter has carried the DAR mission forward for more than 95 years.</p>
+      </section>
+      <section class="today" aria-labelledby="today-heading">
+        <h2 id="today-heading">Mariemont Daughters in the community</h2>
+        <div class="today-grid">
+          <figure class="feature-photo"><img src="loveland-america-250.jpg" alt="Mariemont Chapter members and Loveland community partners holding an Ohio America 250 flag outside Loveland City Hall"><figcaption>Mariemont Chapter members join community partners at Loveland City Hall during America 250 commemorations.</figcaption></figure>
+          <figure class="side-photo"><img src="mariemont-america-250-display.jpg" alt="Circular America 250 display made for Mariemont Chapter, NSDAR"><figcaption>A commemorative display prepared for Mariemont Chapter, NSDAR.</figcaption></figure>
+        </div>
+      </section>
+      <section class="mission" id="work">
+        <h2>What do we do?</h2>
+        <p>Mariemont Daughters honor the people and events that shaped our nation by serving our neighbors today. Our work follows the three mission areas of DAR: historic preservation, education, and patriotism.</p>
+        <h2>Historic preservation</h2>
+        <p>We help preserve local stories, genealogical records, landmarks, and the memory of American Revolutionary War Patriots. The chapter has marked historic sites in the community and supported preservation projects throughout southwest Ohio.</p>
+        <h2>Education</h2>
+        <p>We encourage young people through student programs, essay contests, literacy efforts, awards, and support for DAR schools. Educational exhibits also help community members connect with American history and civic life.</p>
+        <h2>Patriotism</h2>
+        <p>We honor veterans, support active-duty service members, promote Constitution Week, and encourage informed citizenship. Chapter programs provide practical opportunities to serve and remember.</p>
+      </section>
+      <section class="photo-story" id="gallery" aria-labelledby="gallery-heading">
+        <div class="story-copy">
+          <p class="story-kicker">Chapter moments</p>
+          <h2 id="gallery-heading">Friendship in service</h2>
+          <p>Across generations, Mariemont Daughters come together to honor veterans, support neighbors, learn, and celebrate the friendships that make service meaningful.</p>
+        </div>
+        <figure class="story-frame">
+          <img src="mariemont-chapter-moments.png" alt="Mariemont Chapter members sharing fellowship, honoring veterans at a cemetery, preparing community donations, and gathering as a chapter" loading="lazy" decoding="async">
+          <figcaption>Fellowship, remembrance, community service, and chapter life.</figcaption>
+        </figure>
+      </section>
+      <section class="display-feature" id="history">
+        <img src="library-exhibit.jpg" alt="Two Mariemont Chapter members standing beside an America 250 and Constitution Week library exhibit">
+        <div><h2>Sharing history with our neighbors</h2><p>Public displays, commemorations, and educational programs invite the community to explore the American Revolution, the Constitution, and the continuing story of our nation.</p><p><a href="https://www.dar.org/discover/daughters-portico/dar-state-chapter-news/mariemont-chapter-celebrates-95-years-service" target="_blank" rel="noopener">Read about Mariemont Chapter’s 95 years of service</a>.</p></div>
+      </section>
+      <section class="contact-band"><div><h2>Interested in membership?</h2><p>We would be glad to help you begin your DAR journey.</p></div><a class="button" href="mailto:regent@mariemontdar.com?subject=Mariemont%20Chapter%20membership%20inquiry">Email the chapter regent</a></section>
+    </main>
+    <footer>
+      <div class="footer-links"><a href="https://www.dar.org/" target="_blank" rel="noopener">National Society DAR</a><a href="https://ohiodar.org/" target="_blank" rel="noopener">Ohio DAR</a><a href="https://www.dar.org/national-society/become-member/membership-interest-form" target="_blank" rel="noopener">Membership inquiry</a><a href="mailto:webmaster@mariemontdar.com">Webmaster</a></div>
+      <p class="updated">Last Updated: October 13, 2026</p>
+      <p>The content contained herein does not necessarily represent the position of the NSDAR. Hyperlinks to other sites are not the responsibility of the NSDAR, the state organizations or individual DAR chapters.</p>
+      <p>Photographs courtesy of Mariemont Chapter, NSDAR.</p>
+    </footer>
+  </div>
+  <script>
+    const menu=document.querySelector('.menu');const nav=document.querySelector('nav');menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});nav.addEventListener('click',e=>{if(e.target.matches('a')){nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}});
+  </script>
+</body>
+</html>
