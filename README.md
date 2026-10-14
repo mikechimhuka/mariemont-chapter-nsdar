@@ -4,10 +4,6 @@ Official website source for Mariemont Chapter, NSDAR, in Mariemont, Ohio.
 
 The site presents the chapter's history and its service in historic preservation, education, and patriotism.
 
-## Website
-
-[View the live website](https://mariemont-chapter-nsdar.chimhukab.chatgpt.site/)
-
 ## Files
 
 - `index.html` - Complete responsive website.
